@@ -1,0 +1,25 @@
+{
+  "name": "upass-renew-client",
+  "version": "0.0.1",
+  "description": "An electron application which acts as a client for the upass renew service",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "UPass",
+    "Renew",
+    "UBC"
+  ],
+  "author": "Prayansh",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "keytar": "^4.0.4",
+    "node-jsencrypt": "^1.0.0",
+    "node-rest-client": "^3.1.0"
+  }
+}

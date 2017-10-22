@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script src="js/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script src="js/renew.js"></script>
+</head>
+<body>
+<div>
+    <div class="box fl-panel" id="login">
+        <label for="username">Login Name</label>
+        <input id="username" name="username" class="required" tabindex="1" autofocus="true" accesskey="c" type="text"
+               value="" size="36" autocomplete="off">
+        <br>
+        <label for="password">Password</label>
+        <input id="password" name="password" class="required" tabindex="3" accesskey="p" type="password" value=""
+               size="36" autocomplete="off">
+        <br>
+        <select id="PsiId">
+            <option value=""></option>
+            <option value="dc">Douglas College</option>
+            <option value="kpu">Kwantlen Polytechnic University</option>
+            <option value="nvit">Nicola Valley Institute of Technology</option>
+            <option value="ubc">University of British Columbia</option>
+            <option value="bcit">British Columbia Institute of Technology</option>
+            <option value="cu">Capilano University</option>
+            <option value="ecuad">Emily Carr University of Art and Design</option>
+            <option value="lc">Langara College</option>
+            <option value="sfu">Simon Fraser University</option>
+            <option value="vcc">Vancouver Community College</option>
+        </select>
+        <button id="submit" type="button">Renew UPass</button>
+        <br>
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <br>
+        <label for="message">Message:</label>
+        <div id="message"></div>
+        <br>
+        <button id="getStatus" type="button" disabled>Check Status</button>
+    </div>
+
+</div>
+</body>
+</html>

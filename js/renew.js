@@ -1,6 +1,6 @@
 var Client = require('node-rest-client').Client;
 const JSEncrypt = require('node-jsencrypt');
-var consts = require('./consts.js');
+var consts = require('./js/consts.js');
 // const keytar = require('keytar');
 const encrypt = new JSEncrypt();
 encrypt.setPublicKey(consts.RSA_PUBLIC_KEY);
@@ -76,6 +76,9 @@ $(document).ready(function () {
         if (!username || !password || !school) {
             updateMessage("Enter your credentials");
             return;
+        }
+        if ($('#remember').is(':checked')) {
+            // TODO Persist name,school,password
         }
         updateMessage("Renewing UPass....");
         renewPass(username, password, school);

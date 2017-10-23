@@ -1,10 +1,13 @@
 {
   "name": "upass-renew-client",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An electron application which acts as a client for the upass renew service",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "",
   "keywords": [
@@ -12,10 +15,17 @@
     "Renew",
     "UBC"
   ],
-  "author": "Prayansh",
+  "author": "Prayansh prayansh@gmail.com",
   "license": "MIT",
+  "build": {
+    "appId": "com.prayansh.upass.client",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  },
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-builder": "^19.37.2"
   },
   "dependencies": {
     "keytar": "^4.0.4",

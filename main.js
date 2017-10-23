@@ -11,9 +11,9 @@ const url = require('url');
 // be closed automatically when the JavaScript object is garbage collected.
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600});
+    mainWindow = new BrowserWindow({width: 500, height: 500});
 
-    // and load the index.html of the app.
+    // and load the adsa.html of the app.
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'file:',
